@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Veículo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="topo">
+            <img src="Copilot_20251008_111424-removebg-preview.png" alt="Logo da Roda Livre Locadora">
+            <h1>Roda Livre Locadora</h1>
+        </div>
+        <p>Gerencie clientes, veículos, reservas e muito mais!</p>
+    </header>
+
+    <nav>
+        <a href="cadastro-cliente.html">Cadastro de Cliente</a>
+        <a href="cadastro-veiculo.html">Cadastro de Veículo</a>
+        <a href="reserva.html">Reserva</a>
+        <a href="locacao.html">Locação</a>
+        <a href="locadora.html">Locadora</a>
+        <a href="filial.html">Filial</a>
+        <a href="revisao.html">Revisão</a>
+    </nav>
+
+    <form>
+        <label>Modelo:</label>
+        <input type="text" name="modelo"><br>
+
+        <label>Placa:</label>
+        <input type="text" name="placa"><br>
+
+        <label>Tipo:</label>
+        <select name="tipo">
+            <option value="passeio">Passeio</option>
+            <option value="carga">Carga Pesada</option>
+        </select><br>
+
+        <label>Ano:</label>
+        <input type="number" name="ano"><br>
+
+        <button type="submit">Cadastrar</button>
+        <br><br>
+        <a href="index.html">
+            <button type="button">Voltar ao Menu</button>
+        </a>
+    </form>
+</body>
+
+</html>
