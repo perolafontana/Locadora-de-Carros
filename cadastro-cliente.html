@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Cliente</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function toggleCampos(tipo) {
+            document.getElementById('fisica').style.display = tipo === 'fisica' ? 'block' : 'none';
+            document.getElementById('juridica').style.display = tipo === 'juridica' ? 'block' : 'none';
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="topo">
+            <img src="Copilot_20251008_111424-removebg-preview.png" alt="Logo da Roda Livre Locadora">
+            <h1>Roda Livre Locadora</h1>
+        </div>
+        <p>Gerencie clientes, veículos, reservas e muito mais!</p>
+    </header>
+
+    <nav>
+        <a href="cadastro-cliente.html">Cadastro de Cliente</a>
+        <a href="cadastro-veiculo.html">Cadastro de Veículo</a>
+        <a href="reserva.html">Reserva</a>
+        <a href="locacao.html">Locação</a>
+        <a href="locadora.html">Locadora</a>
+        <a href="filial.html">Filial</a>
+        <a href="revisao.html">Revisão</a>
+    </nav>
+
+    <form>
+        <label>Tipo de Cliente:</label><br>
+        <input type="radio" name="tipo" value="fisica" onclick="toggleCampos('fisica')" checked> Pessoa Física
+        <input type="radio" name="tipo" value="juridica" onclick="toggleCampos('juridica')"> Pessoa Jurídica<br><br>
+
+        <div id="fisica">
+            <label>Nome Completo:</label>
+            <input type="text" name="nome_fisica"><br>
+
+            <label>CPF:</label>
+            <input type="text" name="cpf"><br>
+
+            <label>Data de Nascimento:</label>
+            <input type="date" name="nascimento"><br>
+        </div>
+
+        <div id="juridica" style="display:none;">
+            <label>Razão Social:</label>
+            <input type="text" name="razao_social"><br>
+
+            <label>CNPJ:</label>
+            <input type="text" name="cnpj"><br>
+
+            <label>Nome do Responsável:</label>
+            <input type="text" name="responsavel"><br>
+        </div>
+
+        <label>Email:</label>
+        <input type="email" name="email"><br>
+
+        <label>Telefone:</label>
+        <input type="tel" name="telefone"><br>
+
+        <button type="submit">Cadastrar Cliente</button>
+        <br><br>
+        <a href="index.html">
+            <button type="button">Voltar ao Menu</button>
+        </a>
+    </form>
+</body>
+
+</html>
